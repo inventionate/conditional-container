@@ -223,7 +223,7 @@ class ConditionalContainer extends Field
 
                 }
 
-                return Str::contains($attributeValue, $conditionValue);
+                return Str::contains(json_encode($attributeValue), $conditionValue);
 
             case 'starts with':
             case 'startsWith':
